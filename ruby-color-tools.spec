@@ -1,4 +1,5 @@
 Summary:	Color manipulation library for Ruby
+Summary(pl.UTF-8):	Biblioteka manipulacji kolorami dla Ruby
 Name:		ruby-color-tools
 Version:	1.3.0
 Release:	1
@@ -17,7 +18,19 @@ Requires:	ruby-transaction-simple
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Color manipulation library for Ruby.
+ruby-color-tools is a Ruby library to provide RGB, CMYK, and other
+colourspace support to applications that require it. It offers 152
+named RGB colours (184 with spelling variations) that are commonly
+supported and used in HTML, SVG, and X11 applications. A technique
+for generating a monochromatic contrasting palette is also included.
+
+%description -l pl.UTF-8
+ruby-color-tools jest biblioteką języka Ruby dostarczającą wsparcie
+przestrzeni kolorów RGB, CMYK i innych dla aplikacji, które tego
+wymagają. Oferuje 152 nazwane kolory RGB (184 licząc z różnymi
+wymowami), które są powszechnie wspierane i używane w HTML, SVG i
+aplikacjach dla X11. Zawiera również technikę generacji kontrastowej
+palety monochromatycznej.
 
 %prep
 %setup -q -n color-tools-%{version}
