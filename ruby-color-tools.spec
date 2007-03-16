@@ -1,5 +1,5 @@
 Summary:	Color manipulation library for Ruby
-Summary(pl.UTF-8):	Biblioteka manipulacji kolorami dla Ruby
+Summary(pl.UTF-8):	Biblioteka manipulacji kolorami dla języka Ruby
 Name:		ruby-color-tools
 Version:	1.3.0
 Release:	1
@@ -7,7 +7,6 @@ License:	Ruby's
 Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/5478/color-tools-%{version}.tar.gz
 # Source0-md5:	7459f0ca6214d2f340a2f260de56c68c
-#Patch0: %{name}-nogems.patch
 URL:		http://ruby-pdf.rubyforge.org/pdf-writer/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -34,7 +33,6 @@ palety monochromatycznej.
 
 %prep
 %setup -q -n color-tools-%{version}
-#%patch0 -p1
 #cp %{_datadir}/setup.rb .
 
 %build
