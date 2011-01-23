@@ -8,8 +8,8 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/5478/color-tools-%{version}.tar.gz
 # Source0-md5:	7459f0ca6214d2f340a2f260de56c68c
 URL:		http://ruby-pdf.rubyforge.org/pdf-writer/
-BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
+BuildRequires:	ruby-modules
 #BuildRequires:	setup.rb = 3.3.1
 Requires:	ruby-color-tools
 Requires:	ruby-transaction-simple
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ruby-color-tools is a Ruby library to provide RGB, CMYK, and other
 colourspace support to applications that require it. It offers 152
 named RGB colours (184 with spelling variations) that are commonly
-supported and used in HTML, SVG, and X11 applications. A technique
-for generating a monochromatic contrasting palette is also included.
+supported and used in HTML, SVG, and X11 applications. A technique for
+generating a monochromatic contrasting palette is also included.
 
 %description -l pl.UTF-8
 ruby-color-tools jest biblioteką języka Ruby dostarczającą wsparcie
