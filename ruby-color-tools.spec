@@ -10,7 +10,7 @@ Source0:	http://rubyforge.org/frs/download.php/5478/color-tools-%{version}.tar.g
 URL:		http://ruby-pdf.rubyforge.org/pdf-writer/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-#BuildRequires:	setup.rb = 3.3.1
+#BuildRequires:	setup.rb >= 3.3.1
 Requires:	ruby-color-tools
 Requires:	ruby-transaction-simple
 #BuildArch:	noarch
